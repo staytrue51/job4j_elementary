@@ -10,7 +10,8 @@ public class MultiMax {
         }
         if (result > third) {
             result = result;
-        } else {
+        }
+        if (third > result) {
             result = third;
         }
         return result;

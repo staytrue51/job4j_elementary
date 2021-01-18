@@ -14,6 +14,7 @@ public class SquareTest {
         int[] expect = new int[]{0, 1, 4};
         assertThat(rst, is(expect));
     }
+
     @Test
     public void whenBound5Then014() {
         int bound = 5;
@@ -23,4 +24,5 @@ public class SquareTest {
     }
 
 }
+
 

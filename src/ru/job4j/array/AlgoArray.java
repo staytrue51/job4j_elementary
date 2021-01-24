@@ -14,10 +14,7 @@ public class AlgoArray {
         array[4] = temp3;
 
         for (int index = 0; index < array.length; index++) {
-            if (array[index] % 2 == 0) {
-                System.out.println(array[index]);
-            }
-
+            System.out.println(array[index]);
         }
     }
 }

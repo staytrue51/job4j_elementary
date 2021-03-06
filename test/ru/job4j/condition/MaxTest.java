@@ -1,6 +1,7 @@
 package ru.job4j.condition;
 
 import org.junit.Test;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -22,5 +23,22 @@ public class MaxTest {
     public void whenMax4To4Then4() {
         int result = Max.max(4, 4);
         assertThat(result, is(4));
+    }
+
+    @Test
+    public void whenMax1234Then4() {
+        int result = Max.max(1, 2, 3, 4);
+        assertThat(result, is(4));
+    }
+
+    @Test
+    public void whenMax1479Then9() {
+        int result = Max.max(1, 4, 7, 9);
+        assertThat(result, is(9));
+    }
+    @Test
+    public void whenMax123Then3() {
+        int result = Max.max(1, 2, 3);
+        assertThat(result, is(3));
     }
 }
